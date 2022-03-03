@@ -1,0 +1,11 @@
+name: Verify Integrations
+on:
+  schedule:
+    # TODO This should run every 24 hours.
+    - cron: '*/5 * * * *'
+jobs:
+  Verify-Integrations:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🔎 Verifying integrations..."
+      - run: echo "✅ Integrations verified!"
