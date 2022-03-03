@@ -1,0 +1,11 @@
+name: Test
+on:
+  push:
+    branches-ignore:
+      - 'master'
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🍏 This job's status is ${{ job.status }}."
